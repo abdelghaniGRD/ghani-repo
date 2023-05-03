@@ -16,9 +16,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     @media screen and (min-width:375px) {
-      body {
-        width: 90%;
-      }
+
 
       .container {
         width: 376px;
@@ -37,14 +35,19 @@
     body {
       background-color: hsl(212, 45%, 89%);
       font-family: 'Open Sans', sans-serif;
+      /* margin: 0; */
 
     }
 
     .container {
       background-color: hsl(0, 0%, 100%);
       padding: 17px;
-      margin: auto;
+      /* margin: auto; */
       border-radius: 24px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     p {
