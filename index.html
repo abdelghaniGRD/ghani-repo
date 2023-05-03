@@ -18,8 +18,8 @@
     @media screen and (min-width:375px) {
 
 
-      .container {
-        width: 376px;
+      main {
+        width: 320px;
       }
     }
 
@@ -28,49 +28,50 @@
     }
 
     img {
-      width: 100%;
+      max-width: 100%;
       border-radius: 20px;
     }
 
     body {
       background-color: hsl(212, 45%, 89%);
       font-family: 'Open Sans', sans-serif;
-      /* margin: 0; */
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
 
     }
 
-    .container {
+    main {
       background-color: hsl(0, 0%, 100%);
       padding: 17px;
       /* margin: auto; */
       border-radius: 24px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+
     }
 
-    p {
+    p,
+    h1 {
       text-align: center;
       color: hsl(218, 44%, 22%);
       font-size: 15px;
-
+      margin: 0;
     }
 
-    .firstP {
-      font-weight: 900;
-
+    p {
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <img src="images/image-qr-code.png" alt="">
-    <p class="firstP">Improve your front-end skills by building projects</p>
+  <main>
+    <img src="images/image-qr-code.png" alt="QR code">
+    <h1>Improve your front-end skills by building projects</h1>
     <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </main>
 
-  </div>
+
+
 
 
 
